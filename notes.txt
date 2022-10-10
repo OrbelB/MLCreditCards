@@ -21,3 +21,17 @@ GOING WITH METHOD 2
 		this is how other did it as well
 
 	WILL BE LEAVING IN OUTLIERS	
+	WILL NOT USER SMOTE ON TEST DATA, 
+		TEST DATA NEED TO BE AS CLOSE TO THE ORIGINAL DATA AS POSSIBLE
+
+	IMPORTANT - CANT FIGURE OUT WHY
+	While mergining the data, the guid we were following had ~9500 entries after mergin his files; however, after mergin our files we have ~36,000
+
+TO ADD LATER
+#Transforming all objects into numerical data
+#will apply a classification to diffrent value types
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+for x in df_app:
+    if df_app[x].dtypes=='object':
+        df_app[x] = le.fit_transform(df_app[x])
