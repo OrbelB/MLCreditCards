@@ -1,0 +1,23 @@
+COMP 542 Group Project
+
+Data cleaning:
+	while data cleaning first method of getting a cassifier was to 
+	go through the credit card records and put approved for anyone 
+	who had a credit card record
+
+	with this method only ~8.5% aplicatswere accepted 
+
+	The new method that I saw other doing was only accepting those who dont have
+	alot of debt or are payed up 
+
+	eith this method only ~1% where accetable 
+
+Both methods created an oversampling issue
+
+
+
+GOING WITH METHOD 2
+	however will include 0: 1-29 days past due 
+		this is how other did it as well
+
+	WILL BE LEAVING IN OUTLIERS	
