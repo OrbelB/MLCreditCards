@@ -15,7 +15,6 @@ Data cleaning:
 Both methods created an oversampling issue
 
 
-
 GOING WITH METHOD 2
 	however will include 0: 1-29 days past due 
 		this is how other did it as well
@@ -26,6 +25,51 @@ GOING WITH METHOD 2
 
 	IMPORTANT - CANT FIGURE OUT WHY
 	While mergining the data, the guid we were following had ~9500 entries after mergin his files; however, after mergin our files we have ~36,000
+
+Run three: 
+
+Notes:
+	will keep FLAG_MOBIL in because realistically an aplicant must have some type of 
+	contact information
+		just in case all the other contact type are 0
+		*kept in outliers
+
+		our cassifier is calculated in a way that a client is considred a bad client of for any month he didnt pay for more that 29 days.
+			we take their worst value 
+
+			the original guide we followed just took the last month the data was extreacted
+	 
+
+Data cleanig steps:
+
+	OK - 1)	remove duplicate aplications from df_app	
+	OK - 2)	fill in occupation type's missing values with other tag
+	OK - 3)	covert STATUS to 0 & 1
+	OK - 4)	Will drop gender from clean because it doenst effect credit card approval
+
+	OK - 5) convert all object into int types & normalize
+	6) use SMOTE to take care of oversampling
+	7) vizualise the data
+		show the client length
+		show clien agg
+		show if client has car 
+		show number of children
+		etc.
+
+
+
+
+
+
+WE ARE USING THE HISTORY OF PREVIOUS APLICATS TO BUILD A MODEL THAT CAN BETTER FILTER OOT BAD CLIENTS
+
+
+
+
+df_credit['STATUS'].replace({'C' : 0, 'X' : 0}, inplace=True)
+df_credit['STATUS'] = df_credit['STATUS'].astype(int)
+df_credit['STATUS'] = df_credit['STATUS'].apply(lambda x: 1 if x >= 2 else 0)
+df_credit.nunique()
 
 TO ADD LATER
 #Transforming all objects into numerical data
