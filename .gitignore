@@ -1,3 +1,7 @@
 data_files
 clean_data
 .ipynb_checkpoints
+*.csv
+*.ipynb
+.ipynb_checkpoints/dataclean-checkpoint.ipynb
+.ipynb_checkpoints/dataclean-checkpoint.ipynb
