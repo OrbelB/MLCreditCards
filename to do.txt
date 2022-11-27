@@ -1,0 +1,10 @@
+To do for neural network
+
+    1) (x) go through each NN_model file and corret the title for the graphs 
+    2) (x) add comments so its more clear whats going on
+    3) (~) build further models based on the best performing model
+            (~) changing the hyper params
+            () changing bach size
+            () other
+
+     
