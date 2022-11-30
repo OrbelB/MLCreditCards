@@ -8,3 +8,41 @@ To do for neural network
             () other
 
      
+TO DO to files: 
+    1) go through the files and add comments
+
+
+
+ printGraph(title, hist, leg_loc='lower right')
+
+
+ printConfusionMatrix(model, X_test, Y_test, name='model')
+
+
+model_3_a
+
+model_3_b
+
+model_3_c_1
+
+model_3_c_2
+
+model_3_c_2_leaky
+
+model_3_c_2_a
+
+model_3_c_2_b
+
+model_3_c_3
+
+
+
+
+
+
+
+
+
+
+
+
