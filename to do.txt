@@ -19,27 +19,7 @@ TO DO to files:
  printConfusionMatrix(model, X_test, Y_test, name='model')
 
 
-model_3_a
-
-model_3_b
-
-model_3_c_1
-
-model_3_c_2
-
-model_3_c_2_leaky
-
-model_3_c_2_a
-
-model_3_c_2_b
-
-model_3_c_3
-
-
-
-
-
-
+Model_4_B_* all performed well; 
 
 
 
